@@ -92,4 +92,26 @@
   </style>
 </head>
 <body>
-  <h1>🔮 GlitShock</h
+  <h1>🔮 GlitShock</h1>
+  <p class="subtitle">A glitchy chaos injection for your webpage. One click to shake things up!</p>
+
+  <h2>🔖 Drag this to your bookmarks bar:</h2>
+  <a class="button" href="javascript:(function(){document.body.style.transition='all 0.2s';document.body.style.transform='rotate(1deg)';setTimeout(()=>{document.body.style.transform='rotate(-1deg)';},100);setInterval(()=>{document.body.style.transform=`rotate(${(Math.random() - 0.5) * 2}deg)`;},200);})();">⚡ GlitShock It</a>
+
+  <h2>📋 Or manually add this:</h2>
+  <code>
+javascript:(function(){document.body.style.transition='all 0.2s';document.body.style.transform='rotate(1deg)';setTimeout(()=>{document.body.style.transform='rotate(-1deg)';},100);setInterval(()=>{document.body.style.transform=`rotate(${(Math.random() - 0.5) * 2}deg)`;},200);})();  
+  </code>
+
+  <div class="how-to">
+    <h3>🛠️ How to Use</h3>
+    <ul>
+      <li>Drag the <strong>GlitShock It</strong> button to your bookmarks bar.</li>
+      <li>Visit any website you want to test.</li>
+      <li>Click the bookmarklet from your bookmarks bar.</li>
+      <li>Watch your page start to **wiggle and glitch** — pure visual chaos!</li>
+      <li>Reload the page to reset everything to normal.</li>
+    </ul>
+  </div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clear Cookies Bookmarklet</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #111;
+      color: #f5f5f5;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin-bottom: 2rem;
+    }
+
+    .button {
+      background-color: #ff69b4;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      text-decoration: none;
+      margin: 1rem 0;
+      display: inline-block;
+      transition: background 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #ff85c1;
+    }
+
+    code {
+      background-color: #222;
+      color: #f5f5f5;
+      padding: 1rem;
+      display: block;
+      border-radius: 8px;
+      max-width: 80%;
+      margin: 1rem auto;
+      font-size: 0.9rem;
+      white-space: pre-wrap;
+      word-break: break-all;
+    }
+
+    footer {
+      margin-top: 4rem;
+      font-size: 0.8rem;
+    }
+
+    a {
+      color: #ff69b4;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="cookie-title" style="font-family: 'Press Start 2P', cursive; font-size: 4rem; color: white; text-shadow: 4px 4px 0 #ff69b4, 2px 2px 0 #ff69b4; margin-bottom: 4rem; display: flex; align-items: center;">
+    Orbit Storm
+    
+  </h1>
+        
+    <h2 style="font-family: 'Press Start 2P', cursive; font-size: 2rem; display: flex; align-items: center;  margin-bottom: 0;">
+        Unleash chaotic</h2>
+    <h2 style="font-family: 'Press Start 2P', cursive; font-size: 2rem; display: flex; align-items: center; margin-bottom: 4rem;">
+        screen shakes with a single click.</p>
+</h2>
+      
+<h2>📌 Drag this to your bookmarks bar:</h2>
+<a class="button" href="javascript:(function(){  let count = 0;  const maxShakes = 30;  const body = document.body;  const originalBg = body.style.backgroundColor;  const interval = setInterval(() => {    const x = (Math.random() - 0.5) * 20;    const y = (Math.random() - 0.5) * 20;    body.style.transform = `translate(${x}px, ${y}px)`;    body.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 85%)`;    if (++count >= maxShakes) {      clearInterval(interval);      body.style.transform = '';      body.style.backgroundColor = originalBg;      alert('💥 The shake has ended. Hope your page survived!');    }  }, 50);})();" style="margin-bottom: 2rem;">💥 Glitch!</a>
+
+<h2>💡 How to Use:</h2>
+<div style="margin: 0;">
+  <h4 style="margin: 0.5rem 0; font-size: 1.1rem;"><strong>1.</strong> Visit any page you want to mess with.</h4>
+  <h4 style="margin: 0.5rem 0; font-size: 1.1rem;"><strong>2.</strong> Smash that bookmark like a big red button.</h4>
+  <h4 style="margin: 0.5rem 0; font-size: 1.1rem; margin-bottom: 6rem;"><strong>3.</strong> Boom! Watch the page get hit by a glitch storm.</h4>
+</div>
+
+<h2>OR</h2>
+
+<h2>🌟 Copy the code below and paste it into the URL field when creating a new bookmark:</h2>
+<code style="display: block; width: 100%; max-width: 850px; border: 2px solid #ff69b4; padding: 18px 20px; border-radius: 8px; font-size: 1rem; white-space: normal; word-break: break-all;">
+javascript:(function(){document.body.style.backgroundColor = 'black'; document.body.style.color = 'white'; alert('GlitchPop activated!');})();
+</code>
+<img src="giphy(1).gif" alt="Cool Glitch GIF" style="display: block; margin: 4rem auto; max-width: 100%; height: auto; border-radius: 12px;">
+
+  <footer>
+    Made with ♥️ by chxshi &middot; <a href="https://github.com/your-username/your-repo">View on GitHub</a>
+  </footer>
+</body>
+</html>

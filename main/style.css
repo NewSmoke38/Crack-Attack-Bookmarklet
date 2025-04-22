@@ -1,0 +1,21 @@
+.cookie-title {
+    display: inline-block;
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: rgb(249, 11, 27);
+    text-decoration-thickness: 4px;
+    text-underline-offset: 6px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3rem;
+  }
+  
+  
+  h3 {
+    margin: 0.3rem 0;
+  }
+  body {
+    background-color: #000000; /* Pure black background */
+    color: white; /* Ensure the text is visible */
+    font-family: 'Press Start 2P', cursive;
+  }
+    
