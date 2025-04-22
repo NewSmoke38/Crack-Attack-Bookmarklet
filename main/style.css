@@ -1,4 +1,4 @@
-.cookie-title {
+.orbit-title {
     display: inline-block;
     color: white;
     text-decoration: underline;
@@ -18,4 +18,22 @@
     color: white; /* Ensure the text is visible */
     font-family: 'Press Start 2P', cursive;
   }
-    
+  html {
+    scroll-behavior: smooth;
+}
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    opacity: 1;
+  }
+  20%, 22%, 24%, 55% {
+    opacity: 0;
+  }
+}
+
+.flicker-heading {
+  animation: flicker 1.2s infinite;
+}
+
+
+
+
