@@ -3,7 +3,7 @@ Drag the bookmarklet to your bar or copy the code — unleash glitch storms on a
 
 ![Glitch Preview](https://media.giphy.com/media/l3vR85PnGsBwu1PFK/giphy.gif)
 
-> 💾 Add it to your bookmarks bar and go wild — [Check it out here](https://yourdomain.com)
+> 💾 Add it to your bookmarks bar and go wild — [Check it out here](https://newsmoke38.github.io/GlitShock/)
 
 ---
-Made with ❤️ by [chxshi](https://github.com/yourusername)
+Made with ❤️ by [chxshi]
