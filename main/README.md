@@ -1,117 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>GlitShock Bookmarklet</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 2rem;
-      background-color: #0d0d0d;
-      color: #f5f5f5;
-      font-family: 'Segoe UI', sans-serif;
-      text-align: center;
-    }
+# 🌈 Rainbow Reader Bookmarklet
 
-    h1 {
-      font-size: 3rem;
-      color: #ff2c8b;
-      margin-bottom: 1rem;
-    }
+**Rainbow Reader** is here to add color to your life (and web pages)! One click and your boring text transforms into a neon explosion. 
 
-    p.subtitle {
-      font-size: 1.2rem;
-      color: #ccc;
-      margin-bottom: 3rem;
-    }
+## 💡 What Does It Do?
 
-    a.button {
-      display: inline-block;
-      background-color: #ff2c8b;
-      color: white;
-      padding: 1rem 2rem;
-      font-size: 1.2rem;
-      font-weight: bold;
-      border-radius: 12px;
-      text-decoration: none;
-      transition: transform 0.2s ease;
-      margin-bottom: 4rem;
-    }
+- **Rainbow Magic**: Makes your paragraphs pop with random neon colors.
+- **Hover Glow**: Hover over text and see it *light up* like a retro arcade game.
+- **Minimalistic (aka not annoying)**: Adds color without being overwhelming.
 
-    a.button:hover {
-      transform: scale(1.05);
-    }
+---
 
-    h2 {
-      font-size: 1.5rem;
-      color: #00ffe0;
-      margin-bottom: 1rem;
-    }
+## 🌟 How to Use
 
-    code {
-      display: block;
-      background: #1c1c1c;
-      padding: 1rem;
-      border: 2px solid #ff2c8b;
-      border-radius: 8px;
-      color: #f0f0f0;
-      font-size: 0.95rem;
-      word-break: break-word;
-      margin: 2rem auto;
-      max-width: 90%;
-    }
+### 1. **Drag this bookmarklet to your bookmarks bar:**
 
-    .how-to {
-      margin-top: 4rem;
-      text-align: left;
-      max-width: 800px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+[**🌈 Rainbow Reader**](javascript:(function(){const colors = ['#FF69B4', '#FFD700', '#00FFFF', '#ADFF2F', '#FF4500', '#00FF7F', '#FF1493', '#8A2BE2', '#00CED1', '#FF6347'];const style = document.createElement('style');style.textContent = `%60 .rainbow-reader { transition: transform 0.3s ease, box-shadow 0.3s ease; display: inline-block; } .rainbow-reader:hover { transform: scale(1.1) rotate(-2deg); z-index: 9999; position: relative; box-shadow: 0 0 12px rgba(255, 255, 255, 0.4); } %60`;document.head.appendChild(style);document.querySelectorAll('p').forEach(p => { p.classList.add('rainbow-reader'); p.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)]; p.style.color = colors[Math.floor(Math.random() * colors.length)]; p.style.padding = '0.5rem'; p.style.borderRadius = '10px'; p.style.fontFamily = 'monospace'; p.style.fontSize = '1rem'; p.style.marginBottom = '1rem'; });})())
 
-    .how-to h3 {
-      color: #00ffe0;
-      font-size: 1.4rem;
-    }
+### 2. **Click it, sit back, and watch the rainbow magic unfold.**
 
-    .how-to ul {
-      list-style-type: none;
-      padding: 0;
-      font-size: 1.1rem;
-    }
+> 💡 Works best on text-heavy pages like [History of the Internet](https://en.wikipedia.org/wiki/History_of_the_Internet)
 
-    .how-to ul li {
-      margin-bottom: 0.75rem;
-    }
+---
 
-    .how-to ul li::before {
-      content: "💥";
-      margin-right: 0.6rem;
-    }
-  </style>
-</head>
-<body>
-  <h1>🔮 GlitShock</h1>
-  <p class="subtitle">A glitchy chaos injection for your webpage. One click to shake things up!</p>
+## 📸 Screenshots
 
-  <h2>🔖 Drag this to your bookmarks bar:</h2>
-  <a class="button" href="javascript:(function(){document.body.style.transition='all 0.2s';document.body.style.transform='rotate(1deg)';setTimeout(()=>{document.body.style.transform='rotate(-1deg)';},100);setInterval(()=>{document.body.style.transform=`rotate(${(Math.random() - 0.5) * 2}deg)`;},200);})();">⚡ GlitShock It</a>
+Paste your GIFs or screenshots here:
 
-  <h2>📋 Or manually add this:</h2>
-  <code>
-javascript:(function(){document.body.style.transition='all 0.2s';document.body.style.transform='rotate(1deg)';setTimeout(()=>{document.body.style.transform='rotate(-1deg)';},100);setInterval(()=>{document.body.style.transform=`rotate(${(Math.random() - 0.5) * 2}deg)`;},200);})();  
-  </code>
+![Demo Screenshot](demo.png)
 
-  <div class="how-to">
-    <h3>🛠️ How to Use</h3>
-    <ul>
-      <li>Drag the <strong>GlitShock It</strong> button to your bookmarks bar.</li>
-      <li>Visit any website you want to test.</li>
-      <li>Click the bookmarklet from your bookmarks bar.</li>
-      <li>Watch your page start to **wiggle and glitch** — pure visual chaos!</li>
-      <li>Reload the page to reset everything to normal.</li>
-    </ul>
-  </div>
-</body>
-</html>
+---
+
+## 🛠️ How it Works
+
+It’s just some funky JavaScript that applies a bunch of random neon colors and a hover effect to paragraphs. No biggie.
+
+---
+
+## 🚀 Contributing
+
+- Got an idea? Open an issue or PR. Or just say “Hey!”
+- No promises we’ll take your PR seriously, but we’ll definitely look.
+
+---
+
+## 💖 Credits
+
+- **Made by 🧚🏻‍♂️ chxshi**
+- **Totally inspired by 80s neon and pizza.**
+
+Check out the code on GitHub: [Rainbow Reader GitHub](https://github.com/NewSmoke38/rainbow-reader)
+
+---
+
+## 🌐 Demo Link: [Here, Eventually!]

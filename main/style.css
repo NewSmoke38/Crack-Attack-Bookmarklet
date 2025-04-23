@@ -21,19 +21,53 @@
   html {
     scroll-behavior: smooth;
 }
-@keyframes flicker {
-  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
-    opacity: 1;
-  }
-  20%, 22%, 24%, 55% {
-    opacity: 0;
-  }
+
+
+.button:hover {
+  background-color: #f90462;
+  color: white;
+  box-shadow: 0 0 10px 2px white;
 }
 
-.flicker-heading {
-  animation: flicker 1.2s infinite;
+.highlight-heading {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 4rem;
+  color: white;
+  text-shadow: 4px 4px 0 #ff69b4, 2px 2px 0 #ff69b4;
+  margin-bottom: 4rem;
+  display: flex;
+  align-items: center;
 }
 
+.glitch-subhead {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
 
+.glitch-subhead + .glitch-subhead {
+  margin-bottom: 4rem;
+}
 
+.section-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2rem;
+  color: white;
+  text-shadow: 4px 4px 0 #ff69b4, 2px 2px 0 #ff69b4;
+  margin-bottom: 2rem;
+}
 
+.copy-btn {
+  position: absolute;
+  top: 1rem;
+  right: -12px;
+  background-color: #ff69b4;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
