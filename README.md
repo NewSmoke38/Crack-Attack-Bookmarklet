@@ -42,4 +42,4 @@ Check out the code on GitHub: [Rainbow Reader GitHub](https://github.com/NewSmok
 
 ---
 
-## 🌐 Demo Link: (https://rainbow-reader.vercel.app/)
+## 🌐 Demo Link: (https://rainbow-reader-bookmarklet.vercel.app)
